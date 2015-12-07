@@ -292,7 +292,7 @@
     CGRect cropRect = CGRectMake(CGRectGetMinX(_cropRect) - kQRReaderScanExpandWidth, CGRectGetMinY(_cropRect) - kQRReaderScanExpandHeight, CGRectGetWidth(_cropRect) + 2*kQRReaderScanExpandWidth, CGRectGetHeight(_cropRect) + 2*kQRReaderScanExpandHeight);
     
 //    CGRect cropRect = _cropRect;
-    if (fabs(p1 - p2) < 0.000001) {
+    if (fabs(p1 - p2) < 0.00001) {
         captureOutput.rectOfInterest = CGRectMake(cropRect.origin.y /bounds.size.height,
                                                   cropRect.origin.x/bounds.size.width,
                                                   cropRect.size.height/bounds.size.height,
@@ -306,7 +306,7 @@
                                                   cropRect.size.height/fixHeight,
                                                   cropRect.size.width/bounds.size.width);
     } else {
-        CGFloat fixWidth = bounds.size.height * w / h;
+        CGFloat fixWidth = bounds.size.height * h / w;
         CGFloat fixPadding = (fixWidth - bounds.size.width)/2;
         captureOutput.rectOfInterest = CGRectMake(cropRect.origin.y/bounds.size.height,
                                                   (cropRect.origin.x + fixPadding)/fixWidth,
