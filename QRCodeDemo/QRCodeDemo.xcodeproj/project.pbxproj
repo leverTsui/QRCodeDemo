@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1604817F5EF68039719A6338 /* libPods-QRCodeDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F2FACFC7437A86506E567857 /* libPods-QRCodeDemo.a */; };
+		C60933EB1C1A7A880072F635 /* UIImage+QRScale.m in Sources */ = {isa = PBXBuildFile; fileRef = C60933EA1C1A7A880072F635 /* UIImage+QRScale.m */; };
 		C6F94FFB1C1166DA005EC493 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F94FFA1C1166DA005EC493 /* main.m */; };
 		C6F94FFE1C1166DA005EC493 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F94FFD1C1166DA005EC493 /* AppDelegate.m */; };
 		C6F950041C1166DA005EC493 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6F950021C1166DA005EC493 /* Main.storyboard */; };
@@ -15,10 +16,10 @@
 		C6F950091C1166DA005EC493 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6F950071C1166DA005EC493 /* LaunchScreen.storyboard */; };
 		C6F950141C1166DA005EC493 /* QRCodeDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F950131C1166DA005EC493 /* QRCodeDemoTests.m */; };
 		C6F9501F1C1166DA005EC493 /* QRCodeDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F9501E1C1166DA005EC493 /* QRCodeDemoUITests.m */; };
-		C6F9503A1C116C7D005EC493 /* QRScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F950341C116C7D005EC493 /* QRScanViewController.m */; settings = {ASSET_TAGS = (); }; };
-		C6F9503B1C116C7D005EC493 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F950361C116C7D005EC493 /* ViewController.m */; settings = {ASSET_TAGS = (); }; };
-		C6F9503C1C116C7D005EC493 /* QRCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F950391C116C7D005EC493 /* QRCodeGenerator.m */; settings = {ASSET_TAGS = (); }; };
-		C6F950431C116DE9005EC493 /* UIView+QREasyFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F950421C116DE9005EC493 /* UIView+QREasyFrame.m */; settings = {ASSET_TAGS = (); }; };
+		C6F9503A1C116C7D005EC493 /* QRScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F950341C116C7D005EC493 /* QRScanViewController.m */; };
+		C6F9503B1C116C7D005EC493 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F950361C116C7D005EC493 /* ViewController.m */; };
+		C6F9503C1C116C7D005EC493 /* QRCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F950391C116C7D005EC493 /* QRCodeGenerator.m */; };
+		C6F950431C116DE9005EC493 /* UIView+QREasyFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F950421C116DE9005EC493 /* UIView+QREasyFrame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,8 @@
 /* Begin PBXFileReference section */
 		8C606ED5E24B1BDC6CAB360D /* Pods-QRCodeDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QRCodeDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-QRCodeDemo/Pods-QRCodeDemo.release.xcconfig"; sourceTree = "<group>"; };
 		98970292FD872A3E71A89D52 /* Pods-QRCodeDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QRCodeDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QRCodeDemo/Pods-QRCodeDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		C60933E91C1A7A880072F635 /* UIImage+QRScale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+QRScale.h"; sourceTree = "<group>"; };
+		C60933EA1C1A7A880072F635 /* UIImage+QRScale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+QRScale.m"; sourceTree = "<group>"; };
 		C6F94FF61C1166DA005EC493 /* QRCodeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRCodeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6F94FFA1C1166DA005EC493 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C6F94FFC1C1166DA005EC493 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -182,6 +185,8 @@
 				C6F950341C116C7D005EC493 /* QRScanViewController.m */,
 				C6F950351C116C7D005EC493 /* ViewController.h */,
 				C6F950361C116C7D005EC493 /* ViewController.m */,
+				C60933E91C1A7A880072F635 /* UIImage+QRScale.h */,
+				C60933EA1C1A7A880072F635 /* UIImage+QRScale.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -388,6 +393,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C60933EB1C1A7A880072F635 /* UIImage+QRScale.m in Sources */,
 				C6F9503C1C116C7D005EC493 /* QRCodeGenerator.m in Sources */,
 				C6F950431C116DE9005EC493 /* UIView+QREasyFrame.m in Sources */,
 				C6F94FFE1C1166DA005EC493 /* AppDelegate.m in Sources */,

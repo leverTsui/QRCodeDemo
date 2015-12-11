@@ -12,6 +12,7 @@
 #import "QRScanViewController.h"
 #import "UIView+QREasyFrame.h"
 #import "QRCodeCommon.h"
+#import "UIImage+QRScale.h"
 
 @interface ViewController () <UIImagePickerControllerDelegate,UINavigationControllerDelegate>
 
@@ -97,7 +98,9 @@
 //decode
 - (NSString *)decodeQRImageWith:(UIImage*)aImage {
     NSString *qrResult = nil;
-    
+    if (aImage.size.width < 641) {
+        aImage = [aImage TransformtoSize:CGSizeMake(640, 640)];
+    }
     //iOS8及以上可以使用系统自带的识别二维码图片接口，但此api有问题，在一些机型上detector为nil。
     
     //    if (iOS8_OR_LATER) {
