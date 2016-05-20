@@ -195,6 +195,14 @@
     _scanFinished = NO;
 }
 
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    if ([self.captureSession isRunning]) {
+        [self.captureSession stopRunning];
+    }
+}
+
 #pragma mark - capture
 
 - (void)startScan

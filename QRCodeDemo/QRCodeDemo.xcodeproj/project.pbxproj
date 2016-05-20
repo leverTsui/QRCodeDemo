@@ -280,6 +280,7 @@
 				TargetAttributes = {
 					C6F94FF51C1166DA005EC493 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 95CKJLU234;
 					};
 					C6F9500E1C1166DA005EC493 = {
 						CreatedOnToolsVersion = 7.0;
@@ -542,7 +543,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = QRCodeDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.huage.company.QRCodeDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.huage.company.QRCodeDemo16;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -555,7 +556,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = QRCodeDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.huage.company.QRCodeDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.huage.company.QRCodeDemo16;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
