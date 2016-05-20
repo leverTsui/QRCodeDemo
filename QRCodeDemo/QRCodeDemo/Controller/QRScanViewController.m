@@ -195,6 +195,8 @@
     _scanFinished = NO;
 }
 
+//fix bug:多次进入扫一扫界面，再退出，因此界面未被系统回收，captureSession对象一直在运行，会造成内存
+//泄露，引起界面卡顿。
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
